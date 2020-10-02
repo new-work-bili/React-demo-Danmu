@@ -24,7 +24,7 @@ const getClientEnvironment = require('./env');
 const ModuleNotFoundPlugin = require('react-dev-utils/ModuleNotFoundPlugin');
 const ForkTsCheckerWebpackPlugin = require('react-dev-utils/ForkTsCheckerWebpackPlugin');
 const typescriptFormatter = require('react-dev-utils/typescriptFormatter');
-// const px2rem = require('postcss-px2rem')//rem配置
+const px2rem = require('postcss-px2rem')//rem配置
 
 
 const postcssNormalize = require('postcss-normalize');

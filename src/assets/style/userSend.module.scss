@@ -1,0 +1,36 @@
+.wrapper_div{
+	min-width: 500px;
+	width:500px;
+	margin:150px auto 0;
+	border: 1px solid #333;
+}
+
+.send_div{
+	button{
+		
+	}
+}
+
+
+.hotText_ul{
+	overflow: hidden;
+	padding: 10px 25px;
+	li{
+		box-sizing: border-box;
+		float: left;
+		margin: 0 5px 5px;
+		padding: 2px 5px;
+		&:hover{
+			cursor: pointer;
+		}
+	}
+}
+
+
+//背景颜色
+.bgColor_li_red{
+	background-color: palevioletred;
+}
+.bgColor_li_blue{
+	background-color: royalblue;
+}
