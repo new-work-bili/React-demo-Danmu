@@ -15,9 +15,9 @@
 	height: 100vh;
 	
 	.Danmu_span{
-		// display: inline-block;
 		text-align: left;
-		width: 100%;
+		white-space:nowrap;//强制不换行
+		min-width: 100%;//自动扩容
 		font-size: 1.5rem;
 		font-weight: 600;
 		position: absolute;

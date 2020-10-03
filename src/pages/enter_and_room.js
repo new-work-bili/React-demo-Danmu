@@ -1,11 +1,7 @@
 import React, { Component } from 'react'
 import '../assets/style/entrance_room.scss'
 import image  from '../assets/二维码.png'
-if(process.env.NODE_ENV == 'development' || process.env.NODE_ENV == 'test'){
-	var socket = require('socket.io-client')('http://localhost:3001');	//需要这样才能正常链接
-}else{
-	var socket = require('socket.io-client')('http://123.57.209.85:8080');	//需要这样才能正常链接
-}
+import socket from '../websocket.js'
 
 //扫描的二维码；发的弹幕都在这里显示
 export class Danmu_entrance_room extends Component {
@@ -69,7 +65,10 @@ export class Danmu_entrance_room extends Component {
 	}
 	render() {
 		const DammuDom = this.state.DanmuArr.map((item,index)=>{
-			console.log('render')
+			
+			var animationTime = 5;//越长，越快，时间越短;一个字是24px
+			var vw = document.documentElement.clientWidth || document.body.clientWidth;
+			console.log('item.data.length:',item.data.length,vw)
 			var h = item.h
 			var styleObj = {
 				top:`${h}px`,
