@@ -76,12 +76,14 @@ export class Danmu_entrance_room extends Component {
 			
 			return <p className="Danmu_span" key={index} style={styleObj}>{item.data}</p>
 		})
+		const tips = '<--扫码发送弹幕'
 		return (
 			<div>
 				<div className="wrapper" ref={this.Dom_wrapper}>
 					{DammuDom}
 				</div>
 				<div className="QR">
+					<p className="tips">{tips}</p>
 					<img className="image" src={image}/>
 				</div>
 			</div>

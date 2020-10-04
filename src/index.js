@@ -9,7 +9,7 @@ import {BrowserRouter} from 'react-router-dom';//router-history
 
 ReactDOM.render(
   <React.StrictMode>
-	<BrowserRouter>
+	<BrowserRouter basename='/Danmu/'>{/* basename用来配合nginx配置二级目录 */}
 		<App />
 	</BrowserRouter>
   </React.StrictMode>,
