@@ -7,9 +7,10 @@ import * as serviceWorker from './serviceWorker';
 // import 'lib-flexible';//rem
 import {BrowserRouter} from 'react-router-dom';//router-history
 
+const basename = process.env.NODE_ENV=='production'?'/Danmu/':'/'
 ReactDOM.render(
   <React.StrictMode>
-	<BrowserRouter basename='/Danmu/'>{/* basename用来配合nginx配置二级目录 */}
+	<BrowserRouter basename={basename}>{/* basename用来配合nginx配置二级目录 */}
 		<App />
 	</BrowserRouter>
   </React.StrictMode>,

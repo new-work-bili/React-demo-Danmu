@@ -3,6 +3,14 @@ import '../assets/style/Home.scss'
 import {Link} from 'react-router-dom'
 
 export class Home extends PureComponent {
+	constructor(props){
+		super();
+		
+
+	}
+	componentDidMount(){
+		this.props.history.replace('/enter_and_room')
+	}
 	render() {
 		return (
 			<div>
