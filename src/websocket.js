@@ -1,10 +1,15 @@
 const io = require('socket.io-client')
 if(process.env.NODE_ENV == 'development' || process.env.NODE_ENV == 'test'){
 	var url = 'http://localhost:3001'
+	
 	// var socket = require('socket.io-client')('http://localhost:3001');	//需要这样才能正常链接
 }else{
-	var url = 'http://123.57.209.85:8080'
+	// var url = 'http://123.57.209.85:8080'
+	
 	// var socket = require('socket.io-client')('http://123.57.209.85:8080');	//需要这样才能正常链接
+	// 新服务器
+	var url = 'http://47.95.210.21:8080'
+	// var socket = require('socket.io-client')('http://47.95.210.21:8080');	//需要这样才能正常链接
 }
 const options = {//选项
 }
